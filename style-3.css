@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+.back{
+	background-position: 0 0;
+	background-image: url("images/第三部分背景图.jpg");
+	background-color: #fcfbf8;
+	background-attachment: fixed;
+	background-size: cover;
+	height:530vh;
+	width: 100%;
+	justify-content: center;
+}
+
+.back  .title-3{
+	background: url("images/我是被人爱着的狗.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+.back-content{
+	margin: 80px;
+}
+
+.back-title{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+}
+
+.back-title img{
+	width:120px;
+	position: relative;
+	margin-right: 10px;
+}
+
+.container{
+	margin-bottom: 80px;
+}
+
+.back-title h1{
+	font-family: "方正FW筑紫A标题明朝 简";
+/*	color: #ff6826;*/
+	font-size: 50px;
+	font-weight: 200;
+}
+
+.back hr{
+	display: flex;
+	justify-content: center;
+	margin:0 auto;
+	color:#FFD300;
+}
+
+.back p{
+	position: relative;
+	padding: 0 10%;
+	text-align: left;
+	font-size: 20px;
+	text-indent: 43px;
+}
+
+.back-1{
+	position: relative;
+	display: flex;
+	margin: 30px auto;
+	width: 500px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+.part4{
+	color: #ECA600;
+	font-weight: 500;
+}
+
+.group4,.group5{
+	display: flex;
+	flex-direction: row;
+	margin: 10px auto;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+.back-2,.back-3{
+	width: 500px;
+	margin: 10px 30px;
+}
+
+.back-4,.back-5{
+	height: 400px;
+	margin:10px 20px;
+}
+
+.hospital{
+	margin-bottom: 20px;
+	border:0;
+	align-content: center;
+	position: relative;
+	margin-left: 300px;
+}
+
+.back-6{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+	width: 1300px;
+	margin:20px auto 80px;
+}

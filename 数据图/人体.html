@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>人体受伤统计</title>
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .tooltip {
+      display: none;
+      position: absolute;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      padding: 10px;
+      font-size: 14px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+
+    img {
+		max-width: 100%;
+        height: auto;
+        display: flex;
+		margin: 30px auto;
+    }
+  </style>
+</head>
+<body>
+<img src="images/形状 1.png" usemap="#bodymap" />
+<map name="bodymap">
+  <area shape="poly" coords="158,1,142,11,129,25,125,41,125,51,125,57,127,63,133,71,133,78,134,83,149,84,183,83,194,86,203,69,207,53,204,31,191,7,183,5" alt="Head" onmouseover="showTooltip(event, '面部', 39)" onmouseout="hideTooltip()">
+  <area shape="poly" coords="136,87,195,87,197,115,211,127,116,131,135,111,135,88" alt="颈部" onmouseover="showTooltip(event, '颈部', 4)" onmouseout="hideTooltip()">
+  <area shape="poly" coords="95,146,99,253,231,257,237,138,97,136,95,142" alt="胸、背部" onmouseover="showTooltip(event, '胸、背部', 15)" onmouseout="hideTooltip()">
+  <area shape="poly" coords="100,256,100,339,231,339,231,260,101,257" alt="腰部" onmouseover="showTooltip(event, '腰部', 13)" onmouseout="hideTooltip()">
+  <area shape="poly" coords="99,345,85,386,83,424,87,434,138,435,163,416,177,412,189,422,189,448,242,453,246,411,238,364,231,347,101,346" alt="臀部" onmouseover="showTooltip(event, '臀部', 12)" onmouseout="hideTooltip()">
+  <area shape="poly" coords="82,135,33,373,53,386,99,249,98,129,83,135" alt="手臂" onmouseover="showTooltip(event, '手臂', 46)" onmouseout="hideTooltip()">
+  <area shape="poly" coords="247,136,234,249,279,391,303,385,273,241,271,167,249,138" alt="手臂" onmouseover="showTooltip(event, '手臂', 46)" onmouseout="hideTooltip()">
+  <area shape="poly" coords="144,413,139,431,152,450,164,452,177,449,197,442,193,419,183,409" alt="阴部" onmouseover="showTooltip(event, '阴部', 3)" onmouseout="hideTooltip()">
+  <area shape="poly" coords="31,375,3,415,3,427,9,448,35,465,51,451,51,391" alt="手部" onmouseover="showTooltip(event, '手部', 53)" onmouseout="hideTooltip()">
+  <area shape="poly" coords="306,383,279,391,281,453,301,461,315,453,323,440,327,422,309,383" alt="手部" onmouseover="showTooltip(event, '手部', 53)" onmouseout="hideTooltip()">
+  <area shape="poly" coords="85,433,109,583,95,613,114,693,141,687,146,624,142,598,161,452" alt="腿部" onmouseover="showTooltip(event, '腿部', 214)" onmouseout="hideTooltip()">
+  <area shape="poly" coords="169,450,190,595,186,629,189,687,216,694,233,615,227,587,243,451" alt="腿部" onmouseover="showTooltip(event, '腿部', 214)" onmouseout="hideTooltip()">
+  <area shape="poly" coords="117,697,117,767,117,783,150,785,157,773,149,738,140,696" alt="足部" onmouseover="showTooltip(event, '足部', 29)" onmouseout="hideTooltip()">
+  <area shape="poly" coords="191,699,175,769,173,781,199,784,219,777,209,740,214,697,190,691,191,699" alt="足部" onmouseover="showTooltip(event, '足部', 29)" onmouseout="hideTooltip()">
+</map>
+	<div id="tooltip" class="tooltip"></div>
+
+<script>
+     function showTooltip(event, part, count) {
+    var tooltip = document.getElementById('tooltip');
+    tooltip.innerHTML = part + '受伤次数：'+ count;
+    tooltip.style.display = 'block';
+  }
+
+    function hideTooltip() {
+      var tooltip = document.getElementById('tooltip');
+      tooltip.style.display = 'none';
+    }
+
+    document.querySelector('img').addEventListener('mousemove', function(event) {
+      var tooltip = document.getElementById('tooltip');
+      tooltip.style.left = (event.pageX + 10) + 'px'; // 让小框稍微离开鼠标指针
+      tooltip.style.top = (event.pageY + 10) + 'px';
+    });
+  </script>
+</body>
+</html>

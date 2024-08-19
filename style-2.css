@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+
+.policy{
+	background-position: 0 0;
+	background-image: url("images/第二部分背景图.jpg");
+	background-color: #fcfbf8;
+	background-attachment: fixed;
+	background-size: cover;
+	height:1515vh;
+	width: 100%;
+	justify-content: center;
+}
+
+.policy  .title-2{
+	background: url("images/我是案件里的狗.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+.policy-content{
+	margin: 80px;
+}
+
+.policy-title{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+}
+
+.policy-title img{
+	width:120px;
+	position: relative;
+	margin-right: 10px;
+}
+
+.policy-title h1{
+	font-family: "方正FW筑紫A标题明朝 简";
+/*	color: #ff6826;*/
+	font-size: 50px;
+	font-weight: 200;
+}
+
+.policy hr{
+	display: flex;
+	justify-content: center;
+	margin:0 auto;
+	color:#BE171A;
+}
+
+.policy p{
+	position: relative;
+	padding: 0 10%;
+	text-align: left;
+	font-size: 20px;
+	text-indent: 43px;
+}
+
+.policy-content .flourish-number-ticker2{
+	width: 350px;
+	margin: 40px auto;
+	display: block;
+	text-align: center;
+}
+
+.all{
+	display: flex;
+	margin:30px auto;
+	width: 1000px;
+	justify-content: center;
+}
+
+.part2{
+	color: #8A0E10;
+	font-weight: 500;
+}
+
+.part3{
+	color: #fff32f;
+	font-weight: 500;
+}
+
+.flourish-pictogram{
+	width: 1400px;
+	margin: 40px auto;
+	display: block;
+	text-align: center;
+}
+
+.group{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center;
+	align-items: center;
+	margin-bottom: 80px;
+	margin-top: 40px;
+}
+
+.flourish-parliament{
+	width: 1000px;
+	margin: 50px auto;
+	display: block;
+	text-align: center;
+}
+
+.minfadian1, .minfadian2{
+	width:400px;
+	position: relative;
+}
+
+.minfadian2{
+	margin-left: 50px;
+}
+
+.minfadian1{
+	margin-right: 50px;
+}
+
+.group2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin: 40px auto 80px;
+}
+
+.image-container, .image-container2 {
+    position: relative;
+    display: inline-block;
+	margin: 0 50px;
+}
+
+.hover-image {
+    display: block;
+    height:400px;
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 7%; /* Adjust this for irregular shapes */
+    transition: opacity 0.5s ease;
+}
+
+.overlay-2{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 10%; /* Adjust this for irregular shapes */
+    transition: opacity 0.5s ease;
+}
+
+.text{
+	width: 300px;
+}
+
+.image-container:hover .overlay,.image-container2:hover .overlay-2 {
+    opacity: 1;
+}
+
+.flourish-bubble-chart{
+	width: 800px;
+	margin: 50px auto;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 80px;
+}
+
+.flourish-cards{
+	width:1000px;
+	max-width: none;
+	margin: 50px auto;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+.center-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-text p{
+	color:#8e8e8e;
+	font-size: 15px;
+}
+
+.paopao{
+	position: relative;
+	display: flex;
+	margin: 20px auto 80px;
+	width: 1300px;
+	justify-content: center;
+	align-items: center;
+}
+
+.ciyun-1{
+	position: relative;
+	display: flex;
+	margin: 20px auto 80px;
+	width: 800px;
+	justify-content: center;
+	align-items: center;
+}
+
+.age{
+	position: relative;
+	display: flex;
+	margin: 20px auto 80px;
+	width: 800px;
+	justify-content: center;
+	align-items: center;
+}
+
+.group3{
+	width: 1000px;
+	display: flex;
+	gap:10px;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+}
+
+.disease{
+	margin-bottom: 100px;
+}
+
+.flourish-heatmap, .flourish-heatmap2{
+	width: 600px;
+}
+
+.regular{
+	position: relative;
+	display: flex;
+	margin: 20px auto 80px;
+	width: 1200px;
+	justify-content: center;
+	align-items: center;
+}
+
+.flourish-table{
+	width: 900px;
+	margin: 50px auto;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	
+}

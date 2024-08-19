@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+
+.zhengce{
+	background-position: 0 0;
+	background-image: url("images/第四部分背景图.jpg");
+	background-color: #fcfbf8;
+	background-attachment: fixed;
+	background-size: cover;
+	height:630vh;
+	width: 100%;
+	justify-content: center;
+}
+
+.zhengce  .title-4{
+	background: url("images/我是法规条例里的狗.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+.zhengce-content{
+	margin: 80px;
+}
+
+.zhengce-title{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+}
+
+.zhengce-title img{
+	width:120px;
+	position: relative;
+	margin-right: 10px;
+}
+
+.container2{
+	margin-bottom: 80px;
+}
+
+.zhengce-title h1{
+	font-family: "方正FW筑紫A标题明朝 简";
+/*	color: #ff6826;*/
+	font-size: 50px;
+	font-weight: 200;
+}
+
+.zhengce hr{
+	display: flex;
+	justify-content: center;
+	margin:0 auto;
+	color:#830605;
+}
+
+.zhengce p{
+	position: relative;
+	padding: 0 10%;
+	text-align: left;
+	font-size: 20px;
+	text-indent: 43px;
+}
+
+.flourish-number-ticker3{
+	width: 350px;
+	margin: 20px auto;
+	display: block;
+	text-align: center;
+}
+
+.part5{
+	color: #bc0100;
+	font-weight: 500;
+}
+
+.kaitou{
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	margin: 80px auto 80px;
+}
+
+.zhengce-1{
+	display: flex;
+	margin: 30px auto 50px;
+	justify-content: center;
+	width:1200px;
+}
+
+.flourish-table2{
+	width: 800px;
+	margin: 20px auto 80px;
+	display: block;
+	text-align: center;
+}
+
+.zhengce-2{
+	display: flex;
+	margin: 30px auto 80px;
+	justify-content: center;
+	height:600px;
+}
+
+.flourish-hierarchy2{
+	width: 1200px;
+	margin: 20px auto;
+	display: block;
+	text-align: center;
+}
+
+
+.jieyu  .title-5{
+	background: url("images/结语.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+.jieyu-content{
+	background: url("images/结语内容.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+footer{
+	background-color: #862c00;
+/*	background-image: url("images/img-bg.png");*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	font-family: "方正宋三简体";
+	padding: 40px;
+	width: 100%;
+	box-sizing: border-box;
+	flex-direction: column;
+	box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+	position: relative;
+}
+
+.text{
+	margin:50px auto;
+}
+
+footer p , footer ul{
+	margin:10px 0;
+}
+
+footer ul{
+	list-style-type: none;
+	padding:0;
+}
+
+footer ul li{
+	margin:5px 0;
+
+}
+
+footer div{
+	max-width: 800px;
+}
+
+footer p{
+	font-size: 18px;
+}
+
